@@ -24,7 +24,6 @@
         keymap {
                 compatible = "zmk,keymap";
 
-////////////////////////////////////// BASE LAYER //////////////////////////////////////
                 default_layer {
                         display-name = "Base";
                         bindings = <
@@ -35,7 +34,6 @@
                         >;
 }; 
 
-////////////////////////////////////// LOWER LAYER //////////////////////////////////////
                 lower_layer {
 
                         display-name = "Lower";
@@ -48,7 +46,6 @@
                 };
 
 
-////////////////////////////////////// RAISE LAYER //////////////////////////////////////
                 raise_layer {
                         display-name = "Raise";
                         bindings = <
