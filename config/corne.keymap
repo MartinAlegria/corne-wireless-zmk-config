@@ -19,11 +19,13 @@
                     tapping-term-ms = <200>;
                     bindings = <&kp LSHFT>, <&kp CLCK>;
                 };
+
+                &mt {
+                    tapping-term-ms = <350>;
+                };
+
               };
 
-        &mt {
-            tapping-term-ms = <350>;
-        };
 
         keymap {
                 compatible = "zmk,keymap";
