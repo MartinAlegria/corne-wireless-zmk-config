@@ -20,9 +20,33 @@
                     bindings = <&kp LSHFT>, <&kp CLCK>;
                 };
 
-                &mt {
-                    tapping-term-ms = <350>;
-                };
+                mt_ctrl: modtap_ctrl {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <2>;
+                tapping-term-ms = <350>;
+                bindings = <&kp LCTRL>, <&kp B>;
+            };
+
+                mt_shft: modtap_shft {
+                                compatible = "zmk,behavior-mod-morph";
+                                #binding-cells = <2>;
+                                tapping-term-ms = <350>;
+                                bindings = <&kp LSHFT>, <&kp ENTER>;
+                            };
+
+                mt_ctrl2: modtap_ctrl {
+                                compatible = "zmk,behavior-mod-morph";
+                                #binding-cells = <2>;
+                                tapping-term-ms = <350>;
+                                bindings = <&kp LCTRL>, <&kp N>;
+                            };
+                
+                mt_shft2: modtap_shft {
+                                compatible = "zmk,behavior-mod-morph";
+                                #binding-cells = <2>;
+                                tapping-term-ms = <350>;
+                                bindings = <&kp LSHFT>, <&kp SPACE>;
+                            };
 
               };
 
@@ -35,8 +59,8 @@
                         bindings = <
    &kp TAB    &kp Q   &kp W    &kp E      &kp R   &kp T             &kp Y            &kp U      &kp I       &kp O     &kp P      &kp EQUAL
    &caps      &kp A   &kp S    &kp D      &kp F   &kp G             &kp H            &kp J      &kp K       &kp L     &kp SEMI   &kp SQT
-   &kp LCTRL  &kp Z   &kp X    &kp C      &kp V   &mt LCTRL B       &mt RCTRL N      &kp M      &kp COMMA   &kp DOT   &kp FSLH   &kp MINUS
-                               &kp LGUI   &mo 1   &mt LSHFT RET     &mt RSHFT SPACE  &kp BSPC   &mo 2
+   &kp LCTRL  &kp Z   &kp X    &kp C      &kp V   &mt_ctrl          &mt_ctrl2        &kp M      &kp COMMA   &kp DOT   &kp FSLH   &kp MINUS
+                               &kp LGUI   &mo 1   &mt_shft          &mt_shft2        &kp BSPC   &mo 2
                         >;
 }; 
 
