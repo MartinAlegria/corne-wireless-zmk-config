@@ -34,14 +34,14 @@
                                 bindings = <&kp LSHFT>, <&kp ENTER>;
                             };
 
-                mt_ctrl2: modtap_ctrl {
+                mt_ctrl2: modtap_ctrl2 {
                                 compatible = "zmk,behavior-mod-morph";
                                 #binding-cells = <2>;
                                 tapping-term-ms = <350>;
                                 bindings = <&kp LCTRL>, <&kp N>;
                             };
                 
-                mt_shft2: modtap_shft {
+                mt_shft2: modtap_shft2 {
                                 compatible = "zmk,behavior-mod-morph";
                                 #binding-cells = <2>;
                                 tapping-term-ms = <350>;
